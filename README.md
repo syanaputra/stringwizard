@@ -1,2 +1,0 @@
-# stringwizard
-Created with CodeSandbox
