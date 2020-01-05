@@ -1,7 +1,7 @@
 import React from "react";
 import RadioBox from "../Common/RadioBox";
 
-function Trim(props) {
+function Split(props) {
   return (
     <React.Fragment>
       <RadioBox
@@ -16,4 +16,4 @@ function Trim(props) {
   );
 }
 
-export default Trim;
+export default Split;

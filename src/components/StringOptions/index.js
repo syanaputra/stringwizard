@@ -1,22 +1,17 @@
 import React from "react";
-import { TextField, Grid } from "@material-ui/core";
-import rules from "./rules";
+import StringOption from "./StringOption";
 
 function StringOptions(props) {
-  // const { selected } = props;
-  const elementProps = {};
-
-  const selected = "trim";
-
-  const Element = rules[selected] || null;
-
-  if (Element === null) {
-    return "";
-  }
+  const { value } = props;
 
   return (
     <React.Fragment>
-      <Element {...elementProps} />
+      {value != null && value.length > 0 && value.map((item, key) =>
+        <StringOption
+          key={key}
+          value={item}
+        />
+      )}
     </React.Fragment>
   );
 }
