@@ -25,7 +25,10 @@ function RadioBox(props) {
 
   const containerClick = e => {
     e.preventDefault();
-    handleChange(name, value);
+
+    if(handleChange) {
+      handleChange(name, value);
+    }
   };
 
   return (
